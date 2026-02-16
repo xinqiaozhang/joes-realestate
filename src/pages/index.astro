@@ -42,6 +42,7 @@ import Layout from '../layouts/Layout.astro';
           <a href="#about" class="px-4 py-2 text-gray-600 hover:text-primary hover:bg-primary/10 rounded transition">About</a>
           <a href="#services" class="px-4 py-2 text-gray-600 hover:text-primary hover:bg-primary/10 rounded transition">Services</a>
           <a href="#investments" class="px-4 py-2 text-gray-600 hover:text-primary hover:bg-primary/10 rounded transition">Investments</a>
+          <a href="#community" class="px-4 py-2 text-gray-600 hover:text-primary hover:bg-primary/10 rounded transition">Community</a>
           <a href="#testimonials" class="px-4 py-2 text-gray-600 hover:text-primary hover:bg-primary/10 rounded transition">Testimonials</a>
           <a href="#education" class="px-4 py-2 text-gray-600 hover:text-primary hover:bg-primary/10 rounded transition">Education</a>
           <a href="#contact" class="px-4 py-2 text-gray-600 hover:text-primary hover:bg-primary/10 rounded transition">Contact</a>
@@ -107,11 +108,7 @@ import Layout from '../layouts/Layout.astro';
         <div class="order-2 md:order-1">
           <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
             <div class="flex items-center gap-4 mb-6">
-              <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
-                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                </svg>
-              </div>
+              <img src="/images/xinqiao-profile.jpg" alt="Joe Zhang" class="w-20 h-20 rounded-full object-cover border-4 border-primary/20">
               <div>
                 <h3 class="text-xl font-bold text-gray-900">Joe Zhang</h3>
                 <p class="text-primary">Real Estate Investor</p>
@@ -254,6 +251,46 @@ import Layout from '../layouts/Layout.astro';
               Affordable housing need
             </li>
           </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community Section -->
+  <section id="community" class="py-20 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <p class="text-primary text-sm font-semibold tracking-widest uppercase mb-4">Community</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Learning & Networking</h2>
+        <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Constantly investing in education and building relationships with industry leaders and fellow investors.</p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-50 rounded-2xl overflow-hidden border border-gray-100 card-hover">
+          <img src="/images/peter-fortunato-seminar-2025-12.jpg" alt="Peter Fortunato Seminar" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Peter Fortunato Seminar</h3>
+            <p class="text-gray-600 text-sm mb-2">Tampa, FL • Dec 2025</p>
+            <p class="text-gray-500 text-sm">Learning creative financing strategies from legendary real estate investor Peter Fortunato.</p>
+          </div>
+        </div>
+        
+        <div class="bg-gray-50 rounded-2xl overflow-hidden border border-gray-100 card-hover">
+          <img src="/images/masters-of-real-estate-vegas-2025-11.jpg" alt="Masters of Real Estate" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Masters of Real Estate</h3>
+            <p class="text-gray-600 text-sm mb-2">Las Vegas, NV • Nov 2025</p>
+            <p class="text-gray-500 text-sm">Connecting with top investors and learning advanced real estate strategies.</p>
+          </div>
+        </div>
+        
+        <div class="bg-gray-50 rounded-2xl overflow-hidden border border-gray-100 card-hover">
+          <img src="/images/masters-of-real-estate-vegas-2025-11-b.jpg" alt="Networking with Industry Leaders" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Industry Leaders</h3>
+            <p class="text-gray-600 text-sm mb-2">Las Vegas, NV • Nov 2025</p>
+            <p class="text-gray-500 text-sm">Building relationships with experienced investors and mentors in the real estate community.</p>
+          </div>
         </div>
       </div>
     </div>
