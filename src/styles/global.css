@@ -49,3 +49,11 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+.gradient-card {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(212, 175, 55, 0.22), transparent 32%),
+    linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 55%, #1a0a2e 100%);
+}
+
+.border-gold { border-color: var(--gold); }

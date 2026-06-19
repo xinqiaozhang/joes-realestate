@@ -3,6 +3,16 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Joe's Real Estate | Mobile Home & Real Estate Investments">
+  <div id="thank-you-banner" class="hidden fixed top-5 left-1/2 -translate-x-1/2 z-[100] max-w-md w-[calc(100%-2rem)] rounded-2xl bg-white border border-primary/20 shadow-2xl p-4">
+    <div class="flex items-start gap-3">
+      <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">✓</div>
+      <div>
+        <p class="font-bold text-gray-900">Thanks — your message was sent.</p>
+        <p class="text-sm text-gray-600">I'll get back to you as soon as I can.</p>
+      </div>
+    </div>
+  </div>
+
   <!-- Top Bar -->
   <div class="gradient-header py-3 px-6">
     <div class="max-w-6xl mx-auto flex justify-between items-center">
@@ -15,6 +25,7 @@ import Layout from '../layouts/Layout.astro';
       <form action="https://formsubmit.co/joe.zhang.yield@gmail.com" method="POST" class="flex gap-2">
         <input type="hidden" name="_subject" value="New Subscriber - Joe's Real Estate">
         <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://joes-realestate.joe-x-zhang10.workers.dev/?thankyou=true">
         <input type="email" name="email" placeholder="Enter Email for Updates" class="px-4 py-2 rounded text-sm bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white/40 w-48" required>
         <button type="submit" class="px-4 py-2 bg-white text-primary font-medium text-sm rounded hover:bg-gray-100 transition">
           Subscribe
@@ -112,6 +123,28 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
+  <!-- Credibility Strip -->
+  <section class="bg-white px-6 py-8 border-b border-gray-100">
+    <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div>
+        <div class="text-2xl md:text-3xl font-bold text-primary">San Diego</div>
+        <div class="text-sm text-gray-500 mt-1">Local Market Focus</div>
+      </div>
+      <div>
+        <div class="text-2xl md:text-3xl font-bold text-primary">FIRE</div>
+        <div class="text-sm text-gray-500 mt-1">Financial Independence Mindset</div>
+      </div>
+      <div>
+        <div class="text-2xl md:text-3xl font-bold text-primary">Cash Flow</div>
+        <div class="text-sm text-gray-500 mt-1">Numbers-First Analysis</div>
+      </div>
+      <div>
+        <div class="text-2xl md:text-3xl font-bold text-primary">Community</div>
+        <div class="text-sm text-gray-500 mt-1">Learning With Investors</div>
+      </div>
+    </div>
+  </section>
+
   <!-- About Section -->
   <section id="about" class="py-20 px-6 bg-gray-50">
     <div class="max-w-6xl mx-auto">
@@ -196,6 +229,55 @@ import Layout from '../layouts/Layout.astro';
           <p class="text-gray-600">
             Get personalized guidance on building your real estate portfolio with data-driven analysis and market insights.
           </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who I Help / Process Section -->
+  <section class="py-20 px-6 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-14">
+        <p class="text-primary text-sm font-semibold tracking-widest uppercase mb-4">How We Work Together</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Clear, Practical, Numbers-First</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Whether you are new to real estate or already investing, the goal is simple: understand the deal, protect downside, and focus on durable cash flow.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-8 items-stretch">
+        <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm card-hover">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6">Good fit if you are...</h3>
+          <div class="space-y-4">
+            <div class="flex gap-4">
+              <span class="w-7 h-7 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold flex-shrink-0">1</span>
+              <p class="text-gray-600">Curious about mobile homes, private lending, notes, or creative finance.</p>
+            </div>
+            <div class="flex gap-4">
+              <span class="w-7 h-7 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold flex-shrink-0">2</span>
+              <p class="text-gray-600">Looking for cash-flow focused real estate ideas, not hype or speculation.</p>
+            </div>
+            <div class="flex gap-4">
+              <span class="w-7 h-7 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold flex-shrink-0">3</span>
+              <p class="text-gray-600">Want a simple explanation of risks, returns, timelines, and next steps.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-2xl p-8 text-white gradient-card shadow-xl">
+          <h3 class="text-2xl font-bold mb-6">My 3-step approach</h3>
+          <div class="space-y-5">
+            <div class="bg-white/10 rounded-xl p-5 border border-white/15">
+              <p class="text-gold font-semibold mb-1">01 — Clarify your goal</p>
+              <p class="text-white/75 text-sm">Income, learning, private lending, deal analysis, or long-term FIRE planning.</p>
+            </div>
+            <div class="bg-white/10 rounded-xl p-5 border border-white/15">
+              <p class="text-gold font-semibold mb-1">02 — Analyze the numbers</p>
+              <p class="text-white/75 text-sm">Cash flow, downside protection, rehab assumptions, park rules, and exit options.</p>
+            </div>
+            <div class="bg-white/10 rounded-xl p-5 border border-white/15">
+              <p class="text-gold font-semibold mb-1">03 — Decide with discipline</p>
+              <p class="text-white/75 text-sm">Move only when the deal fits the thesis and the risk is understood.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -436,6 +518,16 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
+  <!-- Strong CTA Section -->
+  <section class="px-6 py-16 bg-gray-50">
+    <div class="max-w-5xl mx-auto rounded-3xl gradient-hero p-8 md:p-12 text-center border border-primary/20 shadow-2xl">
+      <p class="text-gold text-sm font-semibold tracking-widest uppercase mb-4">Let's Talk</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Have a deal, question, or investment idea?</h2>
+      <p class="text-white/70 max-w-2xl mx-auto mb-8">Send me a quick note. I can help think through the numbers, risks, and whether the opportunity fits a cash-flow-first strategy.</p>
+      <a href="#contact" class="inline-flex btn-primary px-8 py-4 text-white font-semibold rounded-lg">Send Joe a Message</a>
+    </div>
+  </section>
+
   <!-- Contact Section -->
   <section id="contact" class="py-20 px-6 bg-white">
     <div class="max-w-4xl mx-auto">
@@ -545,4 +637,11 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
   </footer>
+  <script is:inline>
+    if (new URLSearchParams(window.location.search).get('thankyou') === 'true') {
+      const banner = document.getElementById('thank-you-banner');
+      banner?.classList.remove('hidden');
+      setTimeout(() => banner?.classList.add('hidden'), 6000);
+    }
+  </script>
 </Layout>
